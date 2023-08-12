@@ -1,9 +1,38 @@
 @font-face {
-  font-family: 'ignotumregular';
-  src: url('./fonts/ignotum-7bmmw-webfont.woff2') format('woff2'),
-       url('./fonts/ignotum-7bmmw-webfont.woff') format('woff');
+  font-family: 'space_monobold';
+  src: url('./fonts/spacemono-bold-webfont.woff2') format('woff2'),
+       url('./fonts/spacemono-bold-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'space_monobold_italic';
+  src: url('./fonts/spacemono-bolditalic-webfont.woff2') format('woff2'),
+       url('./fonts/spacemono-bolditalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'space_monoitalic';
+  src: url('./fonts/spacemono-italic-webfont.woff2') format('woff2'),
+       url('./fonts/spacemono-italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+@font-face {
+  font-family: 'space_monoregular';
+  src: url('./fonts/spacemono-regular-webfont.woff2') format('woff2'),
+       url('./fonts/spacemono-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
 }
 
 * {
@@ -14,12 +43,41 @@
   font: inherit;
   color: white;
   vertical-align: baseline;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'space_monoregular', system-ui, sans-serif;
 }
 
 body {
   display: flex;
   background-color: rgb(86, 72, 98);
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  flex: auto;
+  height: 33vh;
+}
+
+header > h1 {
+  font-size: 30px;
+}
+
+.forms {
+  display: inline-block;
+  height: 33vh;
+  width: 100vw;
+  background-color: rgba(41, 41, 41, 0.5);
+}
+
+footer {
+  height: 33vh;
 }
 
 .background {
@@ -43,9 +101,9 @@ body {
 }
 
 .logo > p {
-  font-size: 90px;
+  font-size: 50px;
   color: white;
-  font-family: 'ignotumregular', system-ui, sans-serif;
+  font-family: 'space_monoregular', system-ui, sans-serif;
   text-shadow: -1px 1px 0 #000;
   padding: 0;
   margin: 0;
