@@ -53,6 +53,7 @@ body {
 
 .main {
   height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   flex: auto;
@@ -60,35 +61,63 @@ body {
 
 header {
   display: flex;
-  align-items: center;
+  justify-content: center;
   flex: auto;
+  flex-direction: column;
+  flex-wrap: wrap;
   height: 33vh;
+  padding: 20px;
 }
 
 header > h1 {
   font-size: 30px;
+  margin-bottom: 20px;
 }
 
 .forms {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   height: 33vh;
-  width: 100vw;
   background-color: rgba(41, 41, 41, 0.5);
+  padding: 20px;
+}
+label {
+  margin-bottom: 5px;
+}
+
+input {
+  width: 200px;
+  margin-bottom: 10px;
 }
 
 footer {
   height: 33vh;
+  padding: 20px;
 }
 
 .background {
   height: 100vh;
   width: 40vw;
   min-width: 400px;
+  position: relative;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
   background-image: url("./images/background2.jpg");
+}
+
+.credit {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .logo {
