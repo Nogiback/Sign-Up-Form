@@ -13,7 +13,6 @@
        url('./fonts/spacemono-bolditalic-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-
 }
 
 @font-face {
@@ -22,7 +21,6 @@
        url('./fonts/spacemono-italic-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-
 }
 
 
@@ -30,9 +28,9 @@
   font-family: 'space_monoregular';
   src: url('./fonts/spacemono-regular-webfont.woff2') format('woff2'),
        url('./fonts/spacemono-regular-webfont.woff') format('woff');
+
   font-weight: normal;
   font-style: normal;
-
 }
 
 * {
@@ -74,20 +72,34 @@ header > h1 {
   margin-bottom: 20px;
 }
 
-.forms {
+.forms-container {
   display: flex;
   flex-direction: column;
-  height: 33vh;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem 2vw 3rem 2vw;
   background-color: rgba(41, 41, 41, 0.5);
-  padding: 20px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15);
 }
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60vw;
+  gap: 1rem;
+  font-size: 1rem;
+}
+
 label {
-  margin-bottom: 5px;
+  padding: 0;
+  position: relative;
 }
 
 input {
   width: 200px;
-  margin-bottom: 10px;
+  height: 20px;
+  color: #000;
+  padding: 5px;
 }
 
 footer {
