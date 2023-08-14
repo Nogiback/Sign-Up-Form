@@ -30,7 +30,7 @@
         <label for="first-name">
           First Name
           <input type="text" id="first-name" name="first-name" required>
-          <div id="first-name-error" class="error">*Please enter your first name</div>
+          <div id="first-name-error" class="error"></div>
         </label>
         <label for="last-name">
           Last Name
@@ -39,12 +39,12 @@
         </label>
         <label for="email">
           Email
-          <input type="text" id="email" name="email" required autocomplete="off">
+          <input type="email" id="email" name="email" required autocomplete="off">
           <div id="email-error" class="error"></div>
         </label>
-        <label for="phonenumber">
+        <label for="phone-number">
           Phone Number
-          <input type="tel" id="phonenumber" name="phonenumber" optional pattern="[0-9]{10}">
+          <input type="tel" id="phone-number" name="phone-number" optional pattern="[0-9]{10}">
           <div id="tel-error" class="error"></div>
         </label>
         <label for="password">
