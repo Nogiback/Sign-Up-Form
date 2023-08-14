@@ -93,10 +93,16 @@ form {
 label, input {
   display: flex;
   flex-direction: column;
+  gap: 0.25rem;
 }
 
-input {
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=password] {
+  padding: 4px;
   color: #000;
+  border: 3px solid rgb(10, 25, 66);
 }
 
 .button-section {
