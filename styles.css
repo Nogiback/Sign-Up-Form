@@ -96,6 +96,10 @@ label, input {
   gap: 0.25rem;
 }
 
+label {
+  position: relative;
+}
+
 input[type=text],
 input[type=email],
 input[type=tel],
@@ -103,11 +107,26 @@ input[type=password] {
   padding: 4px;
   color: #000;
   border: 3px solid rgb(10, 25, 66);
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: none;
+  border: 3px solid rgb(22, 129, 251);
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+.error {
+  font-size: 0.75rem;
+  color: rgb(255, 21, 0);
+  position: absolute;
+  top: 65px;
 }
 
 .button-section {
   height: 33vh;
   padding: 20px;
+  font-size: 1.1rem;
 }
 
 button[type='submit'] {
@@ -115,8 +134,9 @@ button[type='submit'] {
   font-size: 1.3rem;
   border-radius: 10px;
   background-color: rgb(10, 25, 66);
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
-  margin: 20px 0px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 button[type='submit']:hover {
@@ -130,7 +150,7 @@ button[type='submit']:active {
 
 .background {
   height: 100vh;
-  width: 40vw;
+  width: 80vw;
   min-width: 400px;
   position: relative;
   background-position: center;
@@ -158,7 +178,7 @@ button[type='submit']:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 75px;
   padding: 10px;
 }
 
@@ -174,6 +194,16 @@ button[type='submit']:active {
 img {
   height: 120px;
   padding-right: 10px;
+}
+
+.button-section > p > a {
+  text-decoration: none;
+  font-family: 'space_monobold';
+  color: rgb(10, 25, 66);
+}
+
+.button-section > p > a:hover {
+  color: rgb(205, 79, 67);
 }
 
 @media screen and (max-width: 700px) {
