@@ -85,7 +85,8 @@ form {
   flex-wrap: wrap;
   align-items: center;
   max-width: 45vw;
-  gap: 1rem;
+  min-width: 500px;
+  gap: 2rem;
   font-size: 1rem;
 }
 
@@ -110,6 +111,15 @@ button[type='submit'] {
   background-color: rgb(10, 25, 66);
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
   margin: 20px 0px;
+}
+
+button[type='submit']:hover {
+  cursor: pointer;
+  background-color: rgb(205, 79, 67);
+}
+
+button[type='submit']:active {
+  transform: translateY(2px);
 }
 
 .background {
@@ -172,5 +182,13 @@ img {
 
   .logo {
     margin-top: 120px;
+  }
+
+  .button-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 33vh;
   }
 }
