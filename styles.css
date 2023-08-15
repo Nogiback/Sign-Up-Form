@@ -230,4 +230,11 @@ img {
     justify-content: center;
     align-items: center;
   }
+
+  form {
+    min-width: 100vw;
+    justify-content: center;
+    align-items: center;
+  }
+  
 }
