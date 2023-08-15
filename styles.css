@@ -96,9 +96,6 @@ label, input {
   gap: 0.25rem;
 }
 
-label {
-  position: relative;
-}
 
 input[type=text],
 input[type=email],
