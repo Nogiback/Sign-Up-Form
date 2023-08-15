@@ -10,6 +10,7 @@ const password = document.querySelector('#password');
 const passwordError = document.querySelector('#password-error');
 const confirmPassword = document.querySelector('#confirm-password');
 const confirmPasswordError = document.querySelector('#confirm-password-error');
+const submitButton = document.querySelector('#submit-btn');
 
 firstName.addEventListener('input', function(event) {
   if(firstName.value === '') {
@@ -78,8 +79,10 @@ confirmPassword.addEventListener('input', function(event) {
   } else if (confirmPassword.value !== password.value) {
     confirmPasswordError.textContent = '*Passwords do not match!';
     confirmPassword.style.borderColor = 'red';
+    submitButton.disabled = true;
   } else {
     confirmPasswordError.textContent = '';
     confirmPassword.style.borderColor = 'rgb(10, 25, 66)';
+    submitButton.disabled = false;
   }
 });
